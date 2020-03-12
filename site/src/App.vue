@@ -15,7 +15,7 @@
 
 <style lang="scss">
 $white : #FAFAFA;
-$titles : #001f52;
+$titles : #2C3438;
 
 body {
   margin: 0;
@@ -48,7 +48,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: $titles;
 }
 
 #nav {
