@@ -17,8 +17,8 @@
                         type: 'column',
                         pointWidth: 20
                     },
-                    title : {
-                        text : 'Most Frequent K Algorithm'
+                    title: {
+                        text: 'Most Frequent K Algorithm'
                     },
                     series: [{
                         data: [{
@@ -36,14 +36,14 @@
                     xAxis: {
                         visible: false
                     },
-                    yAxis : {
-                        title : {
+                    yAxis: {
+                        title: {
                             text: 'Count'
                         },
                         tickInterval: 1
                     },
                     plotOptions: {
-                        column : {
+                        column: {
                             dataSorting: {
                                 enabled: true
                             },
@@ -54,6 +54,21 @@
                 }
             }
         },
+        computed : {
+            graphData() {
+                let data = [];
+                const alpha = "ABCDEFGHIJKLMNOPQRST";
+                for (let i=0; i<10; i++) {
+                    data.push({
+                        x: i+1,
+                        y: i+1,
+                        name: alpha[i],
+                        color: i%2 === 0 ? "#7CDEDC" : "#7284A8"
+                    })
+                }
+                return data
+            }
+        }
     }
 
 
