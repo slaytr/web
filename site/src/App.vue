@@ -3,7 +3,7 @@
         <header class="body-header">
             <div class="body-logo">
                 <router-link to="/">
-                    <img class="body-header-logo" src="@/assets/wizard-icon.png" alt="logo"/>
+                    <img class="body-header-logo" src="@/assets/icon.svg" alt="logo"/>
                 </router-link>
                 <div class="body-header-text-logo">Bill Li</div>
             </div>
